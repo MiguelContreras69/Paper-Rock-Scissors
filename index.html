@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="">
+        <div>
+            <h1>Rock Paper Scissors</h1>
+        </div>
+        <div class="">
+            <div class="menu">
+                <div class="divPlayer">
+                    <div class="imgProfile">
+                        <img src="images/1e4f984cf34a65e697fbdf70221db854828a896fr1-384-384v2_uhq.jpg">
+                    </div>
+                    <div style="text-align: center;">
+                        <h2>player</h2>
+                    </div>
+
+                    <div class="flex-container">
+                        <button id="playerRock" class="btn rock"></button>
+                        <button id="playerPaper" class="btn paper"></button>
+                        <button id="PlayerScissors" class="btn scissors"></button>
+                    </div>
+                </div>
+                <div class="divScore">
+                    <h1>Score</h1>
+                    <div class="playerScore">0</div> 
+                    <div class="margin: 0px 50px">-</div> 
+                    <div class="cpuScore">0</div>
+                    <div class="imgProfile">
+                    </div>
+
+                </div>
+                <div class="divComputer">
+                    <div class="imgProfile">
+                        <img src="images/1536100689_1505663910_aqua2.gif">
+                    </div>
+                    <div style="text-align: center;">
+                        <h2>cpu</h2>
+                    </div>
+
+                    <div class="flex-container">
+                        <button id="playerRock" class="btn rock"></button>
+                        <button id="playerPaper" class="btn paper"></button>
+                        <button id="PlayerScissors" class="btn scissors"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+
+</html>
+
+<script>
+    var logoHeight = $('.imgProfile img').height();
+    if (logoHeight < 104) {
+        var margintop = (104 - logoHeight) / 2;
+        $('.imgProfile img').css('margin-top', margintop);
+    }
+</script>

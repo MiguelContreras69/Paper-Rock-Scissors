@@ -1,0 +1,80 @@
+h1 ,h2{
+    text-align: center;
+} 
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f0e68c;
+}
+
+
+.divPlayer, .divComputer, .divScore{
+   width:29%;
+   margin:1%;
+   padding:1%;
+   height: 60%;
+   background-color: burlywood;
+   float: left;
+}
+
+.imgProfile{
+  background-color: red;
+  width:50%;
+  height: 50%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgProfile img {
+    max-width: 100%;
+    /* max-height: 100%; */
+    object-fit: contain;
+    display: block; /* remove extra space below image */
+ }
+
+
+ .flex-container {
+    background-color: DodgerBlue;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly
+  }
+  
+  .flex-container > button {
+    margin: 10px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    width: 27%;
+    padding-block: 10%;
+  }
+
+
+  .rock{
+    background-color: #19aba0;
+  }
+   .paper{
+     background-color: #e2122c;
+   }
+   .scissors{
+     background-color:#b3cc33 ;
+   }
+   
+
+  .btn:hover {background: #eee;}
+  
+  .rock {
+    background-image: url(/images/rockButton.png) ;
+  }
+  .paper {
+    background-image: url(/images/paperButton.png);
+  }
+  .scissors {
+    background-image: url(/images/scissorsButton.png);
+  }
+
+  
