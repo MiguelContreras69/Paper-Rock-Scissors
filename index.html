@@ -14,6 +14,12 @@
         <div>
             <h1>Rock Paper Scissors</h1>
         </div>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h1>Hello, I am a modal!</h1>
+            </div>
+        </div>
         <div class="">
             <div class="menu">
                 <div class="divPlayer">
@@ -25,19 +31,16 @@
                     </div>
 
                     <div class="flex-container">
-                        <button id="playerRock" class="btn rock"></button>
-                        <button id="playerPaper" class="btn paper"></button>
-                        <button id="PlayerScissors" class="btn scissors"></button>
+                        <button id="playerRock" onclick="game(this)" class="btn rock"></button>
+                        <button id="playerPaper" onclick="game(this.id)" class="btn paper"></button>
+                        <button id="playerScissors" onclick="game(this.id)" class="btn scissors"></button>
                     </div>
                 </div>
                 <div class="divScore">
                     <h1>Score</h1>
-                    <div class="playerScore">0</div> 
-                    <div class="margin: 0px 50px">-</div> 
+                    <div class="playerScore">0</div>
+                    <div class="margin: 0px 50px">-</div>
                     <div class="cpuScore">0</div>
-                    <div class="imgProfile">
-                    </div>
-
                 </div>
                 <div class="divComputer">
                     <div class="imgProfile">
@@ -50,7 +53,7 @@
                     <div class="flex-container">
                         <button id="playerRock" class="btn rock"></button>
                         <button id="playerPaper" class="btn paper"></button>
-                        <button id="PlayerScissors" class="btn scissors"></button>
+                        <button id="playerScissors" class="btn scissors"></button>
                     </div>
                 </div>
             </div>
@@ -63,10 +66,4 @@
 
 </html>
 
-<script>
-    var logoHeight = $('.imgProfile img').height();
-    if (logoHeight < 104) {
-        var margintop = (104 - logoHeight) / 2;
-        $('.imgProfile img').css('margin-top', margintop);
-    }
-</script>
+<script src="js/script.js" type="text/javascript"></script>
